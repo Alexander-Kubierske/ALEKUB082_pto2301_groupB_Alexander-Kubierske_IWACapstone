@@ -296,10 +296,10 @@ const handleThemeToggle = () => {
     const current = document.querySelector(`[data-settings-overlay]`).open;
     
     if (current) {
-        current.open = false;
+        document.querySelector(`[data-settings-overlay]`).open = false;
         document.querySelector('[data-settings-theme]').value = CSS.current;
     } else {
-        current.open = true;
+        document.querySelector(`[data-settings-overlay]`).open = true;
     };
 };
 
